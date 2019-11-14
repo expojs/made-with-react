@@ -8,7 +8,11 @@
     "deploy": "node-sass --output-style compressed --include-path scss assets/scss/main.scss assets/css/main.css",
     "play": "nodemon -e scss -x \"npm run build\""
   },
-  "author": "Paul Laros",
+  "author": {
+    "name": "Angular Expo",
+    "email": "angularexpo@gmail.com",
+    "url": "https://github.com/expojs"
+  },
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^4.0.0-alpha.6",
@@ -18,5 +22,8 @@
   "devDependencies": {
     "node-sass": "^4.3.0",
     "nodemon": "^1.11.0"
+  },
+  "config": {
+    "posts_per_page": 10
   }
 }

@@ -2,8 +2,8 @@
 {{#post}}
 
 <main class="card" role="main">
-    {{#if image}}
-    <img src="{{image}}" class="img-fluid card-img-top" alt="{{title}}" />
+    {{#if feature_image}}
+    <img src="{{img_url}}" class="img-fluid card-img-top" alt="{{title}}" />
     {{/if}}
 
     <article class="card-block {{post_class}}">
@@ -37,7 +37,7 @@
                    onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
                     <i class="fa fa-google-plus"></i>
                 </a>
-                <a class="btn btn-round btn-pinterest" href="http://pinterest.com/pin/create/bookmarklet/?media={{image}}&url={{url absolute="true"}}&is_video=[true|false]&description={{title}}" onclick="window.open(this.href, 'pinterestwindow','left=20,top=20,width=600,height=700,toolbar=0,resizable=1'); return false;">
+                <a class="btn btn-round btn-pinterest" href="http://pinterest.com/pin/create/bookmarklet/?media={{img_url}}&url={{url absolute="true"}}&is_video=[true|false]&description={{title}}" onclick="window.open(this.href, 'pinterestwindow','left=20,top=20,width=600,height=700,toolbar=0,resizable=1'); return false;">
                   <i class="fa fa-pinterest"></i>
                 </a>
                 <a class="btn btn-round btn-linkedin" href="http://www.linkedin.com/shareArticle?url={{url absolute="true"}}&title={{title}}" onclick="window.open(this.href, 'linkedinwindow','left=20,top=20,width=600,height=700,toolbar=0,resizable=1'); return false;">
