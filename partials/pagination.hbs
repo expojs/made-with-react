@@ -1,0 +1,13 @@
+<nav role="navigation" class="text-center">
+    {{#if prev}}
+      <a class="btn btn-round btn-info" href="{{page_url prev}}">
+        <i class="fa fa-angle-left"></i>
+      </a>
+    {{/if}}
+    <span class="ml-1 mr-1">Page {{page}} of {{pages}}</span>
+    {{#if next}}
+      <a class="btn btn-round btn-info" href="{{page_url next}}">
+        <i class="fa fa-angle-right"></i>
+      </a>
+    {{/if}}
+</nav>

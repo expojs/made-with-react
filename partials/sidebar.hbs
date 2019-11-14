@@ -1,0 +1,77 @@
+<aside id="sidebar">
+	{{#is "post, page"}}
+		<div class="card">
+			<a target="_blank" href="https://www.creative-tim.com/product/material-dashboard-pro-react/?affiliate_id=93321">
+				<img class="card-img-top" src="{{asset "img/react-material-bootstrap-dashboard-pro.jpg"}}" alt="Material Bootstrap Dashboard Pro - React">
+			</a>
+			<div class="card-block">
+				<h4 class="card-title">React Dashboard PRO</h4>
+				<p class="card-text">
+					Material Bootstrap Dashboard PRO React is a premium admin dashboard template designed to be beautiful and simple.
+				</p>
+				<a target="_blank" href="https://www.creative-tim.com/product/material-dashboard-pro-react/?affiliate_id=93321" class="btn btn-primary btn-block">Download</a>
+			</div>
+		</div>
+	{{/is}}
+
+	<div class="card">
+		<div class="card-block">
+			<h4 class="card-title">ReactJS</h4>
+			<p class="card-text">
+				React is an opensource JavaScript library providing a view for data rendered as HTML. The library is maintained by Instagram, Facebook and the community. React is currently being used by Netflix, Imgur, Airbnb and many others.
+			</p>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="card-block">
+			<h4 class="card-title">Recent Posts</h4>
+			{{#get "posts" limit="10" as |recents|}}
+        <ul class="list-unstyled">
+          {{#foreach recents}}
+            <li><a href="{{url}}">{{title}}</a></li>
+          {{/foreach}}
+        </ul>
+      {{/get}}
+		</div>
+	</div>
+
+	{{> ad}}
+
+	<div class="card mt-4">
+		<div class="card-block">
+			<h4 class="card-title">Resources</h4>
+			<strong>React</strong>
+			<ul class="list-unstyled">
+				<li><a target="_blank" href="https://facebook.github.io/react/">Official Website</a></li>
+				<li><a target="_blank" href="https://facebook.github.io/react/docs/getting-started.html">Documentation</a></li>
+				<li><a target="_blank" href="https://github.com/facebook/react">GitHub</a></li>
+			</ul>
+
+			<strong>React Native</strong>
+			<ul class="list-unstyled">
+				<li><a target="_blank" href="https://facebook.github.io/react-native/">Official Website</a></li>
+				<li><a target="_blank" href="https://facebook.github.io/react-native/docs/getting-started.html">Documentation</a></li>
+				<li><a target="_blank" href="https://github.com/facebook/react-native">GitHub</a></li>
+			</ul>
+
+			<strong>Other</strong>
+			<ul class="list-unstyled">
+				<li><a target="_blank" href="https://www.creative-tim.com/bootstrap-themes/free?ref=madewithreact">Creative Tim - Bootstrap Themes</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="card-block">
+			<h4 class="card-title">Get Social</h4>
+			<ul class="list-unstyled">
+				<li><a target="_blank" href="https://www.facebook.com/madewithreact/">Facebook</a></li>
+				<li><a target="_blank" href="https://twitter.com/madewithreact">Twitter</a></li>
+				<li><a target="_blank" href="https://plus.google.com/111993955982361702587">Google+</a></li>
+				<li><a target="_blank" href="{{@blog.url}}/rss/">RSS</a></li>
+			</ul>
+		</div>
+	</div>
+
+</aside>

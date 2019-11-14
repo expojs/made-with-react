@@ -1,0 +1,108 @@
+{{!< default}}
+{{#post}}
+
+<main class="card" role="main">
+    {{#if image}}
+    <img src="{{image}}" class="img-fluid card-img-top" alt="{{title}}" />
+    {{/if}}
+    <article class="card-block {{post_class}}">
+        <header class="post-header">
+            <h1 class="post-title">{{title}}</h1>
+            <section class="post-meta">
+                <time class="post-date text-muted" datetime="{{date format="YYYY-MM-DD"}}">{{date format="DD MMMM YYYY"}}</time> {{#foreach tags}}
+                    <a class="badge badge-warning" href="{{url}}">{{name}}</a>
+                {{/foreach}}
+            </section>
+        </header>
+        <section class="card-text post-content">
+            {{content}}
+        </section>
+        <footer class="post-footer">
+            <hr />
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="btn btn-round btn-twitter" href="https://twitter.com/intent/tweet?text={{encode title}}&amp;url={{url absolute="true"}}"
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a class="btn btn-round btn-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
+                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a class="btn btn-round btn-google" href="https://plus.google.com/share?url={{url absolute="true"}}"
+                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <i class="fa fa-google-plus"></i>
+                </a>
+                <a class="btn btn-round btn-pinterest" href="http://pinterest.com/pin/create/bookmarklet/?media={{image}}&url={{url absolute="true"}}&is_video=[true|false]&description={{title}}" onclick="window.open(this.href, 'pinterestwindow','left=20,top=20,width=600,height=700,toolbar=0,resizable=1'); return false;">
+                  <i class="fa fa-pinterest"></i>
+                </a>
+                <a class="btn btn-round btn-linkedin" href="http://www.linkedin.com/shareArticle?url={{url absolute="true"}}&title={{title}}" onclick="window.open(this.href, 'linkedinwindow','left=20,top=20,width=600,height=700,toolbar=0,resizable=1'); return false;">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+            </section>
+        </footer>
+    </article>
+</main>
+
+
+
+<div class="row">
+  {{#next_post}}
+    <div class="col-md-6">
+      <article class="card {{post_class}}">
+          {{#if image}}
+            <a href="{{url}}" class="card-img-wrapper img-fluid">
+              <img src="{{image}}" alt="{{title}}" />
+            </a>
+          {{/if}}
+
+          <div class="card-block">
+              <header>
+                  <h2 class="card-title"><a href="{{url}}">{{title}}</a></h2>
+              </header>
+              <section class="card-text">
+                  <a href="{{url}}">Read more &raquo;</a>
+              </section>
+              <footer class="card-meta">
+                  {{#foreach tags}}
+                      <a class="badge badge-danger" href="{{url}}">{{name}}</a>
+                  {{/foreach}}
+                  <time class="card-date float-right text-muted" datetime="{{date format="YYYY-MM-DD"}}">{{date format="DD MMMM YYYY"}}</time>
+              </footer>
+          </div>
+      </article>
+    </div>
+  {{/next_post}}
+  {{^next_post}}
+    <div class="col-md-6"></div>
+  {{/next_post}}
+  {{#prev_post}}
+  <div class="col-md-6">
+    <article class="card {{post_class}}">
+        {{#if image}}
+          <a href="{{url}}" class="card-img-wrapper img-fluid">
+            <img src="{{image}}" alt="{{title}}" />
+          </a>
+        {{/if}}
+
+        <div class="card-block">
+            <header>
+                <h2 class="card-title"><a href="{{url}}">{{title}}</a></h2>
+            </header>
+            <section class="card-text">
+                <a href="{{url}}">Read more &raquo;</a>
+            </section>
+            <footer class="card-meta">
+                {{#foreach tags}}
+                    <a class="badge badge-danger" href="{{url}}">{{name}}</a>
+                {{/foreach}}
+                <time class="card-date float-right text-muted" datetime="{{date format="YYYY-MM-DD"}}">{{date format="DD MMMM YYYY"}}</time>
+            </footer>
+        </div>
+    </article>
+  </div>
+  {{/prev_post}}
+</div>
+
+
+{{/post}}

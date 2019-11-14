@@ -1,0 +1,22 @@
+{
+  "name": "made-with-react-ghost-theme",
+  "version": "2.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-sass --include-path --source-map assets/css assets/scss/main.scss assets/css/main.css",
+    "deploy": "node-sass --output-style compressed --include-path scss assets/scss/main.scss assets/css/main.css",
+    "play": "nodemon -e scss -x \"npm run build\""
+  },
+  "author": "Paul Laros",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.1.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.3.0",
+    "nodemon": "^1.11.0"
+  }
+}

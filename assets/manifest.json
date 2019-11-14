@@ -1,0 +1,14 @@
+{
+  "short_name": "Made with React",
+  "name": "Made with React",
+  "start_url": "http://madewithreact.com/",
+  "display": "standalone",
+  "icons": [
+    { "src": "img/icon_16.png", "type": "image/png", "sizes": "16x16" },
+    { "src": "img/icon_128.png", "type": "image/png", "sizes": "128x128" },
+    { "src": "img/icon_144.png", "type": "image/png", "sizes": "144x144" },
+    { "src": "img/icon_192.png", "type": "image/png", "sizes": "192x192" }
+  ],
+  "background_color": "#ffffff",
+  "theme_color": "#008276"
+}

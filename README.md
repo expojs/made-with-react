@@ -1,1 +1,1 @@
-# made-with-react
+# made-with-react-ghost-theme

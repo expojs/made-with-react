@@ -1,0 +1,22 @@
+<article class="card {{post_class}}">
+    {{#if image}}
+      <a href="{{url}}" class="card-img-wrapper img-fluid">
+        <img src="{{image}}" alt="{{title}}" />
+      </a>
+    {{/if}}
+
+    <div class="card-block">
+        <header>
+            <h2 class="card-title"><a href="{{url}}">{{title}}</a></h2>
+        </header>
+        <section class="card-text">
+            <a href="{{url}}">Read more &raquo;</a>
+        </section>
+        <footer class="card-meta">
+            {{#foreach tags}}
+                <a class="badge badge-danger" href="{{url}}">{{name}}</a>
+            {{/foreach}}
+            <time class="card-date float-right text-muted" datetime="{{date format="YYYY-MM-DD"}}">{{date format="DD MMMM YYYY"}}</time>
+        </footer>
+    </div>
+</article>

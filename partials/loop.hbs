@@ -1,0 +1,21 @@
+<div class="row">
+    <div class="col-sm-6">
+        {{>post-card-featured-1}}
+        {{#foreach posts}}
+            {{#if @odd}}
+                {{>post-card this}}
+            {{/if}}
+        {{/foreach}}
+    </div>
+
+    <div class="col-sm-6">
+        {{#foreach posts}}
+            {{#if @even}}
+                {{>post-card this}}
+            {{/if}}
+        {{/foreach}}
+        {{>post-card-featured-2}}
+    </div>
+</div>
+
+{{pagination}}

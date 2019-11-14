@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+/* Bootstrap */
+@import "bootstrap/variables";
+@import "bootstrap/includes";
+
+/* Font Awesome */
+@import "node_modules/font-awesome/scss/font-awesome";
+
+/* Variables */
+@import "layout/variables";
+@import "layout/global";
+@import "layout/navbar";
+@import "layout/cards";
+@import "layout/buttons";
+@import "layout/fonts";
