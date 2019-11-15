@@ -1,0 +1,53 @@
+
+.code-fund{
+  margin: 0;
+  top: 20%;
+  display: flex;
+  flex-direction: column;
+  z-index: 6;
+  font-size: 12px;
+  line-height: 1.5em;
+  background-color: #fff;
+  border-radius: 4px;
+  .cf-wrapper{
+    padding: 10px !important;
+    background-color: #fff !important;
+    border-radius: 4px;
+    display: flex;
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: center;
+
+    .cf-text{
+      color: #333;
+      text-decoration: none;
+    }
+    .cf-powered-by{
+      box-shadow: none !important;
+     text-decoration: none;
+     margin-top: 5px;
+     font-size: 12px;
+     display: block;
+     color: #777;
+    }
+    .cf-media-body{
+      align-self: center;
+    }
+  }
+  img{
+    width: 100px;
+    height: 100px;
+    margin-top: 0 !important;
+    margin-bottom: 8px;
+    &[data-src="impression_url"]{
+      position: fixed;
+      left: -1000px;
+      top: -1000px;
+    }
+  }
+  .cf-img-wrapper{
+    margin-right: 0 !important;
+    height: auto;
+  }
+}
