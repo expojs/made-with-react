@@ -6929,8 +6929,6 @@ strong {
     .code-fund .cf-wrapper .cf-media-body {
       align-self: center; }
   .code-fund img {
-    width: 100px;
-    height: 100px;
     margin-top: 0 !important;
     margin-bottom: 8px; }
     .code-fund img[data-src="impression_url"] {
