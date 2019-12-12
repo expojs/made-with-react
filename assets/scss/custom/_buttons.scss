@@ -1,0 +1,55 @@
+.btn-round{
+  border-radius: 20px;
+}
+
+.btn-secondary{
+  background-color: $text-primary;
+  color: $white-color;
+  border-radius: $button-border-radious;
+  font-size: $font-size-default;;
+  padding: $buttons-padding;
+  text-transform: uppercase;
+
+  &:hover{
+    background-color: $text-primary;
+    color: $white-color !important;
+  }
+}
+
+.btn-danger, .btn-submit{
+  background-image: linear-gradient(120deg, $brand 0%, $brand-state 100%) !important;
+}
+.btn-outline-danger:hover{
+  background-image: linear-gradient(120deg, $brand 0%, $brand-state 100%) !important;
+}
+
+.btn-danger{
+  border-radius: $button-border-radious;
+  font-size: $font-size-default;;
+  padding: $buttons-padding;
+  text-transform: uppercase;
+
+  &:hover{
+    color: $white-color !important;
+  }
+}
+
+.fa-github, .fa-twitter{
+  font-size: 21px !important;
+}
+
+.fa-facebook-f{
+  font-size: 18px !important;
+}
+
+.btn-outline-danger{
+  border-radius: $button-border-radious;
+  font-size: $font-size-default;;
+  padding: $buttons-padding;
+  text-transform: uppercase;
+  color: $button-default;
+
+  &:hover{
+    color: $white-color !important;
+  }
+}

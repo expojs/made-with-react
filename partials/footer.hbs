@@ -1,5 +1,88 @@
-<footer class="site-footer clearfix text-center text-white">
-    <div class="container">
-        Proudly published with <a href="https://ghost.org" target="_blank">Ghost</a>, hosted on <a href="https://m.do.co/c/93efc3859cad" target="_blank">DigitalOcean</a>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-6 ml-auto mr-auto d-flex justify-content-center">
+        <div class="vuejs-expo">
+          <a href="https://vuejsexpo.com/?ref=angularexpo" target="_blank" class="float-buttons ml-auto mr-auto mb-3">
+            <img src="{{asset "img/icon-vue.png"}}" alt="vuejs">
+          </a>
+          <a href="https://vuejsexpo.com/?ref=angularexpo" target="_blank" class="text-float-buttons">
+            Vuejs Expo
+          </a>
+        </div>
+        <div class="made-with-react">
+          <a href="https://madewithreact.com/?ref=angularexpo" target="_blank" class="float-buttons ml-auto mr-auto mb-3">
+            <img src="{{asset "img/icon-react.png"}}" alt="madewithreact">
+          </a>
+          <a href="https://madewithreact.com/?ref=angularexpo" target="_blank" class="text-float-buttons">
+            Made with React
+          </a>
+        </div>
+      </div>
     </div>
+    <div class="row pt-5 pl-5 pr-5 responsive-footer">
+      <div class="col-md-3">
+        <div class="d-flex">
+          <img src="{{asset "img/logo/angular.png"}}" alt="angular" class="footer-img">
+          <h5 class="footer-title ml-1">Angular Expo</h5>
+        </div>
+        <p class="footer-text pr-3">
+          Angular Expo is a beautiful showcase of websites, applications and experiments using the Angular JavaScript framework.
+        </p>
+      </div>
+      <div class="col-md-2">
+        <h5 class="footer-title">About us</h5>
+        <ul class="nav flex-column list-unstyled">
+          <li class="nav-item"><a href="{{@site.url}}/blog/">Blog</a></li>
+          <li class="nav-item"><a href="{{@site.url}}/about/">About Us</a></li>
+          <li class="nav-item"><a href="mailto:angularexpo@gmail.com">Contact us</a></li>
+
+        </ul>
+      </div>
+      <div class="col-md-2">
+        <h5 class="footer-title">More Info</h5>
+        <ul class="nav flex-column list-unstyled">
+          <li class="nav-item"><a href="{{@site.url}}/advertise/">Advertise</a></li>
+          <li class="nav-item"><a href="#" onclick="dialog.showModal();return false;">Newsletter</a></li>
+          <li class="nav-item"><a href="https://docs.google.com/forms/d/1I_FAai7Z5VFpZvOxFS68yZsCDsAngnOknIqzCwbBjE0" target="_blank">Submit product</a></li>
+        </ul>
+      </div>
+      <div class="col-md-2">
+        <h5 class="footer-title">Special Thanks</h5>
+        <ul class="nav flex-column list-unstyled">
+          <li class="nav-item"><a href="https://iradesign.io/?ref=angularexpo">IRA Design</a></li>
+          <li class="nav-item"><a href="https://www.creative-tim.com/templates/angular?partner=93321">Creative Tim</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h5 class="footer-title">Useful Links</h5>
+        <ul class="nav flex-column list-unstyled">
+          <li class="nav-item"><a target="_blank" href="https://angular.io/">Official Website</a></li>
+          <li class="nav-item"><a target="_blank" href="https://angular.io/docs/js/latest/">Official Documentation</a></li>
+          <li class="nav-item"><a target="_blank" href="https://www.creative-tim.com/bootstrap-themes/angular-dashboard/?partner=93321"  onClick="ga('send', 'event', 'Outbound', 'Footer', 'https://www.creative-tim.com/bootstrap-themes/angular-dashboard/?partner=93321')">Angular Templates</a></li>
+          <li class="nav-item"><a target="_blank" href="https://github.com/expojs/angularexpo">Github Angular Expo</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <div class="social-area ml-auto mr-auto">
+      <ul class="footer-social ml-auto mr-auto justify-content-center">
+        <li class="nav-item">
+          <a href="https://www.facebook.com/AngularExpo/" target="_blank" class="nav-link"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        <li class="nav-item">
+          <a href="https://twitter.com/AngularExpo" target="_blank" class="nav-link"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li class="nav-item">
+          <a href="https://github.com/expojs/angularexpo" target="_blank" class="nav-link"><i class="fab fa-github"></i></a>
+        </li>
+        <li class="nav-item">
+          <a href="https://angularexpo.com/rss/" target="_blank" class="nav-link"><i class="fa fa-rss"></i></a>
+        </li>
+      </ul>
+      <p class="text-center">Copyright © 2019 Angular Expo. All Rights Reserved.</p>
+    </div>
+
+  </div>
 </footer>

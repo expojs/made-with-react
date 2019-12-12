@@ -1,0 +1,49 @@
+body{
+  background-color: $background-color;
+  font-family: 'Roboto', sans-serif;
+  font-size: $font-size-default;;
+  line-height: 1.428571429;
+}
+a{
+  color: $text-primary;
+  text-decoration: none;
+
+  &:hover,
+  &:focus,
+  &:active{
+    text-decoration: none !important;
+    color: $text-primary !important;
+  }
+}
+
+.image-svg{
+  width: 1100px;
+  position: absolute;
+  margin-top: -60px;
+  right: 0;
+  z-index: -1;
+}
+.margin-100{
+  margin: 100px 0;
+}
+.post-page-background{
+  position: absolute;
+  margin-top: -510px;
+  z-index: -1;
+}
+.background-header{
+  position: absolute;
+  z-index: -1;
+  top: -65px;
+}
+.form-control:focus{
+ outline:none;
+ box-shadow: none;
+}
+.white-space{
+  background-color: #fdfcff;
+  width: 10000px;
+  height: 558px;
+  position: absolute;
+  right: -9990px;
+}

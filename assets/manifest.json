@@ -1,7 +1,7 @@
 {
-  "short_name": "Made with React",
-  "name": "Made with React",
-  "start_url": "http://madewithreact.com/",
+  "short_name": "Expo",
+  "name": "Angular Expo",
+  "start_url": "http://angularexpo.com/",
   "display": "standalone",
   "icons": [
     { "src": "img/icon_16.png", "type": "image/png", "sizes": "16x16" },
@@ -9,6 +9,6 @@
     { "src": "img/icon_144.png", "type": "image/png", "sizes": "144x144" },
     { "src": "img/icon_192.png", "type": "image/png", "sizes": "192x192" }
   ],
-  "background_color": "#ffffff",
-  "theme_color": "#008276"
+  "background_color": "#ff4081",
+  "theme_color": "#673ab7"
 }

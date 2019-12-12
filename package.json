@@ -1,29 +1,52 @@
 {
-  "name": "made-with-react-ghost-theme",
-  "version": "2.0.0",
+  "name": "angularexpo",
   "description": "",
-  "main": "index.js",
+  "demo": "https://angularexpo.com",
+  "version": "1.0.0",
+  "engines": {
+    "ghost": "3.0.0",
+    "ghost-api": "v3"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "5.11.2",
+    "bootstrap": "4.3.1",
+    "del": "5.1.0",
+    "fs": "0.0.1-security",
+    "ghost-search": "^1.1.0",
+    "gulp": "4.0.2",
+    "gulp-concat": "2.6.1",
+    "gulp-html-replace": "1.6.2",
+    "gulp-inline-css": "3.4.0",
+    "gulp-replace": "1.0.0",
+    "gulp-sass": "4.0.2",
+    "gulp-uglify": "3.0.2",
+    "gulp-uncss": "1.0.6",
+    "node-sass": "4.13.0",
+    "nodemon": "1.19.4"
+  },
   "scripts": {
     "build": "node-sass --include-path --source-map assets/css assets/scss/main.scss assets/css/main.css",
     "deploy": "node-sass --output-style compressed --include-path scss assets/scss/main.scss assets/css/main.css",
     "play": "nodemon -e scss -x \"npm run build\""
   },
+  "license": "MIT",
   "author": {
     "name": "Angular Expo",
     "email": "angularexpo@gmail.com",
     "url": "https://github.com/expojs"
   },
-  "license": "ISC",
-  "dependencies": {
-    "bootstrap": "4.0.0-alpha.6",
-    "font-awesome": "4.7.0",
-    "jquery": "3.1.1"
+  "gpm": {
+    "type": "theme",
+    "categories": [
+      "Material Design"
+    ]
   },
-  "devDependencies": {
-    "node-sass": "4.13.0",
-    "nodemon": "1.11.0"
-  },
+  "keywords": [
+    "ghost",
+    "theme",
+    "ghost-theme"
+  ],
   "config": {
-    "posts_per_page": 10
+    "posts_per_page": 5
   }
 }
