@@ -3,6 +3,7 @@ body{
   font-family: 'Roboto', sans-serif;
   font-size: $font-size-default;;
   line-height: 1.428571429;
+  overflow-x: hidden;
 }
 a{
   color: $text-primary;
@@ -17,9 +18,8 @@ a{
 }
 
 .image-svg{
-  width: 1100px;
+  width: 1000px;
   position: absolute;
-  margin-top: -60px;
   right: 0;
   z-index: -1;
 }
@@ -43,7 +43,10 @@ a{
 .white-space{
   background-color: #fdfcff;
   width: 10000px;
-  height: 558px;
+  height: 706px;
   position: absolute;
-  right: -9990px;
+  right: -10000px;
+}
+.image-svg, .white-space{
+  margin-top: -149px;
 }

@@ -3,6 +3,7 @@
 }
 .navbar{
   transition: all .3s ease 0s;
+  padding: 22px 0;
 
   &.bg-white{
     box-shadow: $shadow-navbar;
@@ -19,7 +20,7 @@
   }
   .navbar-brand{
     font-weight: lighter;
-    margin-bottom: -3px;
+    margin-bottom: -1px;
     img{
       position: relative;
       top: -3px;
