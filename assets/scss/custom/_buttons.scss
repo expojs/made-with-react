@@ -16,14 +16,14 @@
   }
 }
 
-.btn-info, .btn-submit{
+.btn-danger, .btn-submit{
   background-image: linear-gradient(120deg, $brand 0%, $brand-state 100%) !important;
 }
-.btn-outline-info:hover{
+.btn-outline-danger:hover{
   background-image: linear-gradient(120deg, $brand 0%, $brand-state 100%) !important;
 }
 
-.btn-info{
+.btn-danger{
   border-radius: $button-border-radious;
   font-size: $font-size-default;;
   padding: $buttons-padding;
@@ -42,17 +42,14 @@
   font-size: 18px !important;
 }
 
-.btn-outline-info{
+.btn-outline-danger{
   border-radius: $button-border-radious;
   font-size: $font-size-default;;
   padding: $buttons-padding;
   text-transform: uppercase;
-  color: $brand-state;
-  border-color: $brand-state;
+  color: $button-default;
 
   &:hover{
     color: $white-color !important;
-    background-color: $brand-state;
-    border-color: $brand-state;
   }
 }

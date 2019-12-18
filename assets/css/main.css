@@ -7040,7 +7040,7 @@ a.text-dark:hover, a.text-dark:focus {
     line-height: 1.4;
     text-align: center; }
     .code-fund .cf-wrapper .cf-text {
-      color: #223464;
+      color: #333;
       text-decoration: none; }
     .code-fund .cf-wrapper .cf-powered-by {
       box-shadow: none !important;
@@ -7168,11 +7168,11 @@ a {
     padding-bottom: 0; }
     .card .card-body .tags-area {
       padding: 10px 0; }
-      .card .card-body .tags-area .text-info a,
-      .card .card-body .tags-area .text-info a:hover {
-        color: #16BAE7 !important;
+      .card .card-body .tags-area .text-danger a,
+      .card .card-body .tags-area .text-danger a:hover {
+        color: #EC250D !important;
         text-transform: uppercase; }
-      .card .card-body .tags-area .text-info {
+      .card .card-body .tags-area .text-danger {
         font-size: 14px; }
     .card .card-body .card-title {
       font-size: 21px;
@@ -7282,7 +7282,7 @@ a {
       width: 46px;
       display: block;
       top: 7px;
-      background: #16BAE7;
+      background: #EC250D;
       color: #FFFFFF; }
       .section-search .form-search .btn-submit .icon-search {
         font-size: 18px;
@@ -7347,7 +7347,7 @@ a {
       font-size: 13px;
       padding: 6px 20px;
       top: 9px;
-      background: #16BAE7;
+      background: #EC250D;
       color: #FFFFFF; }
 
 .page-content {
@@ -7367,18 +7367,18 @@ a {
     background-color: #223464;
     color: #FFFFFF !important; }
 
-.btn-info, .btn-submit {
-  background-image: linear-gradient(120deg, #5CDDFF 0%, #16BAE7 100%) !important; }
+.btn-danger, .btn-submit {
+  background-image: linear-gradient(120deg, #FD5D93 0%, #EC250D 100%) !important; }
 
-.btn-outline-info:hover {
-  background-image: linear-gradient(120deg, #5CDDFF 0%, #16BAE7 100%) !important; }
+.btn-outline-danger:hover {
+  background-image: linear-gradient(120deg, #FD5D93 0%, #EC250D 100%) !important; }
 
-.btn-info {
+.btn-danger {
   border-radius: 30px;
   font-size: 14px;
   padding: 10px 24px;
   text-transform: uppercase; }
-  .btn-info:hover {
+  .btn-danger:hover {
     color: #FFFFFF !important; }
 
 .fa-github, .fa-twitter {
@@ -7387,17 +7387,14 @@ a {
 .fa-facebook-f {
   font-size: 18px !important; }
 
-.btn-outline-info {
+.btn-outline-danger {
   border-radius: 30px;
   font-size: 14px;
   padding: 10px 24px;
   text-transform: uppercase;
-  color: #16BAE7;
-  border-color: #16BAE7; }
-  .btn-outline-info:hover {
-    color: #FFFFFF !important;
-    background-color: #16BAE7;
-    border-color: #16BAE7; }
+  color: #F44336; }
+  .btn-outline-danger:hover {
+    color: #FFFFFF !important; }
 
 .pagination .page-item .page-link {
   font-size: 14px;
@@ -7466,7 +7463,7 @@ a {
     font-size: 14px;
     padding: 10px 24px;
     text-transform: uppercase;
-    color: #16BAE7; }
+    color: #F44336; }
     .card-subscribe .card-body .submit-button:hover {
       color: #FFFFFF; }
   .card-subscribe .card-body .clear {
@@ -7587,7 +7584,7 @@ a {
       padding-top: 8px;
       padding-bottom: 8px;
       font-weight: 200;
-      background: #16BAE7;
+      background: #EC250D;
       color: #FFFFFF; }
 
 .subscribe-image {
