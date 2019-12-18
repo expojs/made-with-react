@@ -1,7 +1,7 @@
 {
-  "name": "angularexpo",
+  "name": "madewithreact",
   "description": "",
-  "demo": "https://angularexpo.com",
+  "demo": "https://madewithreact.com",
   "version": "1.0.0",
   "engines": {
     "ghost": "3.0.0",
@@ -12,7 +12,7 @@
     "bootstrap": "4.3.1",
     "del": "5.1.0",
     "fs": "0.0.1-security",
-    "ghost-search": "^1.1.0",
+    "ghost-search": "1.1.0",
     "gulp": "4.0.2",
     "gulp-concat": "2.6.1",
     "gulp-html-replace": "1.6.2",
@@ -31,7 +31,7 @@
   },
   "license": "MIT",
   "author": {
-    "name": "Angular Expo",
+    "name": "Made with React",
     "email": "angularexpo@gmail.com",
     "url": "https://github.com/expojs"
   },

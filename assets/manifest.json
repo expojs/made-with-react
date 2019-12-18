@@ -1,7 +1,7 @@
 {
   "short_name": "Expo",
-  "name": "Angular Expo",
-  "start_url": "http://angularexpo.com/",
+  "name": "Made with React",
+  "start_url": "http://madewithreact.com/",
   "display": "standalone",
   "icons": [
     { "src": "img/icon_16.png", "type": "image/png", "sizes": "16x16" },
