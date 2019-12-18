@@ -81,12 +81,12 @@
     .tags-area{
       padding: 10px 0;
 
-      .text-danger a,
-      .text-danger a:hover{
+      .text-info a,
+      .text-info a:hover{
         color: $brand-state !important;
         text-transform: uppercase;
       }
-      .text-danger{
+      .text-info{
         font-size: $font-size-default;;
       }
     }
