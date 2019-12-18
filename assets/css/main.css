@@ -7050,22 +7050,16 @@ a.text-dark:hover, a.text-dark:focus {
       display: block;
       color: #777; }
     .code-fund .cf-wrapper .cf-media-body {
-      align-self: center;
-      margin-left: 10px; }
-    .code-fund .cf-wrapper .cf-impression {
-      display: none; }
-  .code-fund .cf-img {
-    width: 100px !important;
-    height: 100px;
+      align-self: center; }
+  .code-fund img {
     margin-top: 0 !important;
-    margin-bottom: 8px; }
-    .code-fund .cf-img[data-src="impression_url"] {
+    margin-right: 10px; }
+    .code-fund img[data-src="impression_url"] {
       position: fixed;
       left: -1000px;
       top: -1000px; }
   .code-fund .cf-img-wrapper {
     margin-right: 0 !important;
-    width: 100%;
     height: auto; }
 
 body {

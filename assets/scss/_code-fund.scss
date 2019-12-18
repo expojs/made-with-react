@@ -33,17 +33,11 @@
     }
     .cf-media-body{
       align-self: center;
-      margin-left: 10px;
-    }
-    .cf-impression{
-      display: none;
     }
   }
-  .cf-img{
-    width: 100px !important;
-    height: 100px;
+  img{
     margin-top: 0 !important;
-    margin-bottom: 8px;
+    margin-right: 10px;
     &[data-src="impression_url"]{
       position: fixed;
       left: -1000px;
@@ -52,7 +46,6 @@
   }
   .cf-img-wrapper{
     margin-right: 0 !important;
-    width: 100%;
     height: auto;
   }
 }
