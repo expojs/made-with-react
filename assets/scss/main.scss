@@ -1,18 +1,17 @@
 @charset "UTF-8";
+@import "node_modules/bootstrap/scss/bootstrap";
 
-/* Bootstrap */
-@import "bootstrap/variables";
-@import "bootstrap/includes";
-
-/* Font Awesome */
-@import "node_modules/font-awesome/scss/font-awesome";
-
-/* Variables */
-@import "layout/variables";
-@import "layout/global";
-@import "layout/navbar";
-@import "layout/cards";
-@import "layout/buttons";
-@import "layout/fonts";
+@import "custom/variables";
 
 @import "code-fund";
+
+@import "custom/misc";
+@import "custom/card";
+@import "custom/navbar";
+@import "custom/sections";
+@import "custom/buttons";
+@import "custom/pagination";
+@import "custom/sidebar";
+@import "custom/footer";
+@import "custom/content";
+@import "custom/subscribe-area";

@@ -1,2 +1,20 @@
-{{!< default}}
-{{> "loop"}}
+{{!< layouts/default}}
+
+<main role="main">
+  <div class="page-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          {{> "loop"}}
+        </div>
+        <div class="col-md-4">
+          <div class="row">
+            <div class="col-md-12">
+              {{> sidebar}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

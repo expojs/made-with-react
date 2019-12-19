@@ -1,0 +1,61 @@
+body{
+  background-color: $background-color;
+  font-family: 'Roboto', sans-serif;
+  font-size: $font-size-default;;
+  line-height: 1.428571429;
+  overflow-x: hidden;
+}
+a{
+  color: $text-primary;
+  text-decoration: none;
+
+  &:hover,
+  &:focus,
+  &:active{
+    text-decoration: none !important;
+    color: $text-primary !important;
+  }
+}
+
+.image-svg{
+  width: 1051px;
+  position: absolute;
+  right: -27px;
+  z-index: -1;
+}
+.margin-100{
+  margin: 100px 0;
+}
+.post-page-background{
+  position: absolute;
+  margin-top: -510px;
+  z-index: -1;
+}
+.background-header{
+  position: absolute;
+  z-index: -1;
+  top: -65px;
+}
+.form-control:focus{
+ outline:none;
+ box-shadow: none;
+}
+.white-space{
+  background-color: #fdfcff;
+  width: 10000px;
+  height: 646px;
+  position: absolute;
+  z-index: -2;
+  right: -10000px;
+}
+.image-svg, .white-space{
+  margin-top: -149px;
+}
+.page-content{
+  .error-button{
+    width: 170px;
+  }
+  .error-image{
+    width: 55%;
+  }
+}

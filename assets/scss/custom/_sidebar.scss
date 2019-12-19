@@ -1,0 +1,110 @@
+.card-tags{
+  .card-header{
+    i{
+      font-size: 18px;
+      margin-right: 10px;
+      margin-top: 3px;
+      color: $text-primary;
+    }
+    h5{
+      margin-bottom: 0;
+      color: $text-primary;
+    }
+  }
+  .card-body{
+    .tags-menu{
+      list-style: none;
+      padding: 0;
+
+      li{
+        display: flex;
+        border-bottom: 1px solid #D8D8D8;
+        padding: 7px 0;
+
+        p{
+          margin: 0;
+          margin-left: auto;
+          right: 10px;
+          position: relative;
+            color: $text-primary;
+        }
+
+        a{
+          text-transform: uppercase;
+          color: $text-primary;
+        }
+      }
+    }
+  }
+}
+
+.card-subscribe{
+
+  .card-header{
+    i{
+      font-size: 18px;
+      margin-right: 10px;
+      margin-top: 3px;
+      color: $text-primary;
+    }
+    h5{
+      color: $text-primary;
+    }
+  }
+
+  p{
+    font-weight: lighter;
+    color: $text-primary;
+  }
+
+  .card-body{
+    padding-bottom: 30px;
+
+    .form-input{
+      .text-input{
+        width: 100%;
+        border: 0;
+        outline: 0;
+        border-bottom: 1px solid $text-primary;
+        color: $text-primary;
+        font-size: $font-size-default;;
+
+        opacity: 0.5;
+
+        &:focus,&:active,&:hover{
+          outline: none;
+          opacity: 1;
+        }
+        &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+          color: $text-primary;
+          opacity: 1; /* Firefox */
+        }
+
+        &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+          color: $text-primary;
+          opacity: 1;
+        }
+
+        &::-ms-input-placeholder { /* Microsoft Edge */
+          color: $text-primary;
+          opacity: 1;
+        }
+
+      }
+    }
+    .submit-button{
+      border-radius: $button-border-radious;
+      font-size: $font-size-default;;
+      padding: $buttons-padding;
+      text-transform: uppercase;
+      color: $brand-state;
+
+      &:hover{
+        color: $white-color;
+      }
+    }
+    .clear{
+      margin-top: 30px;
+    }
+  }
+}

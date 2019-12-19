@@ -1,0 +1,61 @@
+.navbar-transparent{
+  background: transparent;
+}
+.navbar{
+  transition: all .3s ease 0s;
+  padding: 22px 0;
+
+  &.bg-white{
+    box-shadow: $shadow-navbar;
+  }
+
+  .navbar-brand,
+  .navbar-nav .nav-item .nav-link{
+    color: $text-primary;
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 20px;
+  }
+  .navbar-brand{
+    font-weight: lighter;
+    margin-bottom: -3px;
+    img{
+      position: relative;
+      top: -3px;
+    }
+  }
+  .nav-social{
+    list-style: none;
+    .nav-item .btn{
+      font-size: $font-size-default;;
+      padding: 9px 24px;
+      border: none;
+    }
+  }
+
+  .navbar-toggler{
+    font-size: 1.25rem;
+    line-height: 1;
+    padding: .25rem .75rem;
+    border: .0625rem solid transparent;
+    border-radius: .25rem;
+    background-color: transparent;
+    color: $text-primary;
+  }
+  .navbar-toggler-icon {
+    color: $text-primary;
+  }
+}
+@media (min-width: 992px){
+  .navbar-toggler {
+      display: none;
+  }
+}
+@media (max-width: 992px){
+  .navbar-collapse{
+    position: relative;
+    left: 33px;
+  }
+}

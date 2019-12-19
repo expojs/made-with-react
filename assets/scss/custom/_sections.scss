@@ -1,0 +1,140 @@
+.section-search{
+  max-width: 560px;
+
+  .form-search{
+    position: relative;
+
+    .form-control-search{
+      border-radius: 65px;
+      box-shadow: $shadow-default;
+      border: none;
+      color: $text-primary;
+      display: block;
+      font-size: $font-size-default;;
+      font-weight: 300;
+      height: 60px;
+      line-height: 1.42857;
+      padding: 6px 36px;
+      vertical-align: middle;
+    }
+
+    .btn-submit{
+      position: absolute;
+      right: 9px;
+      border: none;
+      padding: 15px 16px;
+      border-radius: 25px;
+      height: 46px;
+      line-height: 30px;
+      width: 46px;
+      display: block;
+      top: 7px;
+      background: $brand-state;
+      color: $white-color;
+
+      .icon-search{
+        font-size: 18px;
+        position: relative;
+        top: -7px;
+        right: 1px;
+      }
+    }
+  }
+
+  #my-custom-results{
+    background-color: $white-color;
+    border-radius: $border-radious-default;
+    width: auto;
+    max-width: 250px;
+    margin-top: 10px;
+    box-shadow: $shadow-default;
+    position: absolute;
+    z-index: 1050;
+    transform: translate3d(0,1px,0)!important;
+
+    .search-menu-tags{
+      padding: 0 20px;
+      &:not(:first-child),
+      &:not(:last-child){
+          margin-bottom: 5px;
+      }
+      .search-item{
+        text-transform: capitalize;
+      }
+    }
+    .search-menu-tags:first-child{
+      padding-top: 20px;
+    }
+    .search-menu-tags:last-child{
+      padding-bottom: 20px;
+    }
+  }
+}
+.section-header{
+  margin: 150px 0;
+
+  .text-description{
+    font-size: 18px;
+    font-weight: lighter;
+    color: $text-primary;
+    margin-bottom: 24px;
+  }
+
+  .text-title{
+    margin-bottom: 10px;
+    font-size: 50px;
+    color: $text-primary;
+  }
+
+  .form-group.form-subscribe{
+    position: relative;
+
+    .form-control{
+      border-radius: $button-border-radious;
+      border: 1px solid $text-primary;
+      color: $text-primary;
+      display: block;
+      padding: 23px;
+      font-weight: 400;
+      font-size: $font-size-default;;
+      background-color: $background-color;
+      opacity: 0.5;
+
+      &:focus, &:active {
+        box-shadow: none;
+        border: 1px solid $text-primary;
+        opacity: 1;
+      }
+      &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: $text-primary;
+        opacity: 1; /* Firefox */
+      }
+
+      &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: $text-primary;
+        opacity: 1;
+      }
+
+      &::-ms-input-placeholder { /* Microsoft Edge */
+        color: $text-primary;
+        opacity: 1;
+      }
+    }
+    .btn-submit{
+      position: absolute;
+      right: 10px;
+      border: none;
+      border-radius: $button-border-radious;
+      display: block;
+      font-weight: 200;
+      font-size: 13px;
+      padding: 6px 20px;
+      top: 9px;
+      background: $brand-state;
+      color: $white-color;
+    }
+  }
+}
+.page-content{
+  margin-top: 100px;
+}
