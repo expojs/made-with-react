@@ -65,14 +65,31 @@
         width: 100%;
         border: 0;
         outline: 0;
-        border-bottom: 1px solid #D8D8D8;
-        color: #999999;
+        border-bottom: 1px solid $text-primary;
+        color: $text-primary;
         font-size: $font-size-default;;
+
+        opacity: 0.5;
 
         &:focus,&:active,&:hover{
           outline: none;
-
+          opacity: 1;
         }
+        &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+          color: $text-primary;
+          opacity: 1; /* Firefox */
+        }
+
+        &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+          color: $text-primary;
+          opacity: 1;
+        }
+
+        &::-ms-input-placeholder { /* Microsoft Edge */
+          color: $text-primary;
+          opacity: 1;
+        }
+
       }
     }
     .submit-button{

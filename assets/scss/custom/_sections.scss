@@ -81,7 +81,7 @@
   }
 
   .text-title{
-    margin: 20px 0;
+    margin-bottom: 10px;
     font-size: 50px;
     color: $text-primary;
   }
@@ -91,18 +91,33 @@
 
     .form-control{
       border-radius: $button-border-radious;
-      border: 1px solid #d7d7d7;
+      border: 1px solid $text-primary;
       color: $text-primary;
       display: block;
       padding: 23px;
       font-weight: 400;
       font-size: $font-size-default;;
       background-color: $background-color;
+      opacity: 0.5;
 
-      &:focus {box-shadow: none;
-      border: 1px solid $text-primary;}
-      &:active{
+      &:focus, &:active {
+        box-shadow: none;
         border: 1px solid $text-primary;
+        opacity: 1;
+      }
+      &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: $text-primary;
+        opacity: 1; /* Firefox */
+      }
+
+      &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: $text-primary;
+        opacity: 1;
+      }
+
+      &::-ms-input-placeholder { /* Microsoft Edge */
+        color: $text-primary;
+        opacity: 1;
       }
     }
     .btn-submit{

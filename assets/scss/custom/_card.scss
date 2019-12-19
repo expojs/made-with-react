@@ -103,7 +103,7 @@
 
     .card-text{
       font-size: $font-size-default;;
-      color: #999999;
+      color: $text-primary;
       font-weight: lighter;
       line-height: 24px;
     }
@@ -118,7 +118,7 @@
     }
     .card-body .container{
       p{
-        color: #999999;
+        color: $text-primary;
       }
     }
   }

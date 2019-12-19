@@ -7077,9 +7077,9 @@ a {
     color: #223464 !important; }
 
 .image-svg {
-  width: 1000px;
+  width: 1051px;
   position: absolute;
-  right: 0;
+  right: -27px;
   z-index: -1; }
 
 .margin-100 {
@@ -7102,12 +7102,19 @@ a {
 .white-space {
   background-color: #fdfcff;
   width: 10000px;
-  height: 706px;
+  height: 646px;
   position: absolute;
+  z-index: -2;
   right: -10000px; }
 
 .image-svg, .white-space {
   margin-top: -149px; }
+
+.page-content .error-button {
+  width: 170px; }
+
+.page-content .error-image {
+  width: 55%; }
 
 .card {
   width: 100%;
@@ -7176,7 +7183,7 @@ a {
         color: #3C4858 !important; }
     .card .card-body .card-text {
       font-size: 14px;
-      color: #999999;
+      color: #223464;
       font-weight: lighter;
       line-height: 24px; }
   .card.post-card .card-img-top {
@@ -7184,7 +7191,7 @@ a {
   .card.post-card .btn {
     font-weight: 200; }
   .card.post-card .card-body .container p {
-    color: #999999; }
+    color: #223464; }
   .card.recent-posts .card-header {
     padding-bottom: 0; }
     .card.recent-posts .card-header i {
@@ -7219,7 +7226,7 @@ a {
     margin-right: 20px; }
   .navbar .navbar-brand {
     font-weight: lighter;
-    margin-bottom: -1px; }
+    margin-bottom: -3px; }
     .navbar .navbar-brand img {
       position: relative;
       top: -3px; }
@@ -7312,25 +7319,38 @@ a {
     color: #223464;
     margin-bottom: 24px; }
   .section-header .text-title {
-    margin: 20px 0;
+    margin-bottom: 10px;
     font-size: 50px;
     color: #223464; }
   .section-header .form-group.form-subscribe {
     position: relative; }
     .section-header .form-group.form-subscribe .form-control {
       border-radius: 30px;
-      border: 1px solid #d7d7d7;
+      border: 1px solid #223464;
       color: #223464;
       display: block;
       padding: 23px;
       font-weight: 400;
       font-size: 14px;
-      background-color: #F5F5FC; }
-      .section-header .form-group.form-subscribe .form-control:focus {
+      background-color: #F5F5FC;
+      opacity: 0.5; }
+      .section-header .form-group.form-subscribe .form-control:focus, .section-header .form-group.form-subscribe .form-control:active {
         box-shadow: none;
-        border: 1px solid #223464; }
-      .section-header .form-group.form-subscribe .form-control:active {
-        border: 1px solid #223464; }
+        border: 1px solid #223464;
+        opacity: 1; }
+      .section-header .form-group.form-subscribe .form-control::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #223464;
+        opacity: 1;
+        /* Firefox */ }
+      .section-header .form-group.form-subscribe .form-control:-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: #223464;
+        opacity: 1; }
+      .section-header .form-group.form-subscribe .form-control::-ms-input-placeholder {
+        /* Microsoft Edge */
+        color: #223464;
+        opacity: 1; }
     .section-header .form-group.form-subscribe .btn-submit {
       position: absolute;
       right: 10px;
@@ -7447,11 +7467,26 @@ a {
     width: 100%;
     border: 0;
     outline: 0;
-    border-bottom: 1px solid #D8D8D8;
-    color: #999999;
-    font-size: 14px; }
+    border-bottom: 1px solid #223464;
+    color: #223464;
+    font-size: 14px;
+    opacity: 0.5; }
     .card-subscribe .card-body .form-input .text-input:focus, .card-subscribe .card-body .form-input .text-input:active, .card-subscribe .card-body .form-input .text-input:hover {
-      outline: none; }
+      outline: none;
+      opacity: 1; }
+    .card-subscribe .card-body .form-input .text-input::placeholder {
+      /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: #223464;
+      opacity: 1;
+      /* Firefox */ }
+    .card-subscribe .card-body .form-input .text-input:-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      color: #223464;
+      opacity: 1; }
+    .card-subscribe .card-body .form-input .text-input::-ms-input-placeholder {
+      /* Microsoft Edge */
+      color: #223464;
+      opacity: 1; }
   .card-subscribe .card-body .submit-button {
     border-radius: 30px;
     font-size: 14px;
@@ -7566,7 +7601,8 @@ a {
       font-size: 14px;
       width: 60%;
       border-radius: 0;
-      padding: 0; }
+      padding: 0;
+      margin-left: 18px; }
     .subscribe-area .subscribe-input .form-group.form-subscribe .btn-submit {
       position: absolute;
       right: 12px;

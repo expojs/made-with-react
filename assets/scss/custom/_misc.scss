@@ -18,9 +18,9 @@ a{
 }
 
 .image-svg{
-  width: 1000px;
+  width: 1051px;
   position: absolute;
-  right: 0;
+  right: -27px;
   z-index: -1;
 }
 .margin-100{
@@ -43,10 +43,19 @@ a{
 .white-space{
   background-color: #fdfcff;
   width: 10000px;
-  height: 706px;
+  height: 646px;
   position: absolute;
+  z-index: -2;
   right: -10000px;
 }
 .image-svg, .white-space{
   margin-top: -149px;
+}
+.page-content{
+  .error-button{
+    width: 170px;
+  }
+  .error-image{
+    width: 55%;
+  }
 }
