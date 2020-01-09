@@ -5,7 +5,6 @@
     <div class="container">
       <div class="row">
         <div class="col-md-8">
-          {{#get "posts"}}
           <div class="row">
             {{#foreach posts}}
               <div class="col-lg-6 col-md-12 col-12">
@@ -15,19 +14,12 @@
           </div>
           {{ pagination }}
 
-          {{/get}}
-
-
         </div>
         <div class="col-md-4">
           <div class="row">
             <div class="col-md-12">
               <div class="card">
-                <div class="ad bsa-center bsa-center--spacing">
-                  <div id="codefund" class="code-fund"><!-- fallback content --></div>
-                  <script src="https://app.codefund.io/properties/536/funder.js" async="async"></script>
-                </div>
-
+                {{> bsa-1  }}
               </div>
               <div class="sidebar-page">
                 <div class="card" id="theme-3">
