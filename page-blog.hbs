@@ -5,9 +5,9 @@
     <div class="container">
       <div class="row">
         <div class="col-md-8">
-          {{#get "posts" filter="tags:blog"}}
+          {{#get "posts"}}
           <div class="row">
-            {{#foreach posts  from="1" to="5"}}
+            {{#foreach posts}}
               <div class="col-lg-6 col-md-12 col-12">
                   {{> post}}
               </div>
