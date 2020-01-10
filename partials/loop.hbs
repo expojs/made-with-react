@@ -3,14 +3,12 @@
   <div class="col-lg-6 col-md-12 col-12">
     {{> post-creativetim }}
   </div>
-  {{#get "posts" filter="tags:-[blog]" include="tags"}}
+  {{#foreach posts}}
+    <div class="col-lg-6 col-md-12 col-12">
+        {{> post}}
+    </div>
+  {{/foreach}}
 
-    {{#foreach posts from="1" to="5"}}
-      <div class="col-lg-6 col-md-12 col-12">
-          {{> post}}
-      </div>
-    {{/foreach}}
-  {{/get}}
 
 </div>
 
