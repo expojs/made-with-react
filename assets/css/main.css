@@ -7174,7 +7174,8 @@ a {
         color: #16BAE7 !important;
         text-transform: uppercase; }
       .card .card-body .tags-area .text-info {
-        font-size: 14px; }
+        font-size: 14px;
+        color: #16BAE7 !important; }
     .card .card-body .card-title {
       font-size: 21px;
       font-weight: bold;
