@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <link rel="dns-prefetch" href="//fonts.gstatic.com">
+  <link rel="dns-prefetch" href="//s3.buysellads.com">
+  <link rel="dns-prefetch" href="//google-analytics.com">
+  <link rel="dns-prefetch" href="//www.google-analytics.com">
+
+  <title>{{#if post.title}}{{meta_title}} - {{@site.title}}{{else}}{{meta_title}}{{/if}}</title>
+
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="manifest" href="{{asset "/manifest.json"}}">
+  <link rel="shortcut icon" href="{{asset "/img/logo/react.png"}}">
+  <link rel="icon" sizes="128x128" href="{{asset "/img/logo/react.png"}}">
+
+  <link rel="stylesheet" href="{{asset 'assets/css/main.css'}}">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,,600,800,900,300,200" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
+  {{ghost_head}}
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-W9L625Z’');</script>
+  <!-- End Google Tag Manager -->
+</head>
+<body class="{{body_class}}">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W9L625Z”"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  {{navigation}}
+  {{{body}}}
+  {{> footer}}
+
+  {{ghost_foot}}
+</body>
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<script src="https://unpkg.com/@tryghost/content-api@1.3.4/umd/content-api.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/ghost-search@1.1.0/dist/ghost-search.min.js"></script>
+
+<script type="text/javascript">
+let yPos;
+    let ghostSearch = new GhostSearch({
+        key: '57eecfb7f0398659088427c6f0', // This is just a demo key. Replace the key with a real one. See Step 3.
+        url: 'https://madewithreact.com',
+        input: '#my-custom-input',
+        results: '#my-custom-results',
+        options: {
+            keys: [
+                'name',
+            ],
+        },
+        api: {
+            resource: 'tags',
+            parameters: {
+                fields: ['name', 'slug'],
+            },
+        },
+        template: function(result) {
+            let url = [location.protocol, '//', location.host].join('') + '/tag';
+            return `<div class="search-menu-tags">
+            <a class="search-item" href="` + url + `/` + result.slug + `/">` + result.name + `</a>
+            </div>`;
+        }
+    })
+    $(document).ready(function() {
+      yPos = window.pageYOffset;
+
+      $('.collapse').on('show.bs.collapse', function() {
+        $(this).closest('.navbar').removeClass('navbar-transparent').addClass('bg-white');
+      }).on('hide.bs.collapse', function() {
+          $(this).closest('.navbar').addClass('navbar-transparent').removeClass('bg-white');
+      });
+    });
+    var nav;
+    function yScroll(){
+      nav = $('#nav');
+      yPos = window.pageYOffset;
+      nav.removeClass("bg-white");
+      if(yPos > 150){
+          nav.addClass("bg-white");
+      }
+    }
+    window.addEventListener("scroll", yScroll);
+
+</script>
+
+
+</html>

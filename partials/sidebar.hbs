@@ -1,78 +1,51 @@
-<aside id="sidebar">
-  {{> ad}}
-
-	{{#is "post, page"}}
-		<div class="card">
-			<a target="_blank" href="https://www.creative-tim.com/product/material-dashboard-pro-react/?affiliate_id=93321">
-				<img class="card-img-top" src="{{asset "img/react-material-bootstrap-dashboard-pro.jpg"}}" alt="Material Bootstrap Dashboard Pro - React">
-			</a>
-			<div class="card-block">
-				<h4 class="card-title">React Dashboard PRO</h4>
-				<p class="card-text">
-					Material Bootstrap Dashboard PRO React is a premium admin dashboard template designed to be beautiful and simple.
-				</p>
-				<a target="_blank" href="https://www.creative-tim.com/product/material-dashboard-pro-react/?affiliate_id=93321" class="btn btn-primary btn-block">Download</a>
-			</div>
-		</div>
-	{{/is}}
-
-	<div class="card">
-		<div class="card-block">
-			<h4 class="card-title">ReactJS</h4>
-			<p class="card-text">
-				React is an opensource JavaScript library providing a view for data rendered as HTML. The library is maintained by Instagram, Facebook and the community. React is currently being used by Netflix, Imgur, Airbnb and many others.
-			</p>
-		</div>
-	</div>
-
-	<div class="card">
-		<div class="card-block">
-			<h4 class="card-title">Recent Posts</h4>
-			{{#get "posts" limit="10" as |recents|}}
-        <ul class="list-unstyled">
-          {{#foreach recents}}
-            <li><a href="{{url}}">{{title}}</a></li>
-          {{/foreach}}
-        </ul>
-      {{/get}}
-		</div>
-	</div>
-
-
-	<div class="card mt-4">
-		<div class="card-block">
-			<h4 class="card-title">Resources</h4>
-			<strong>React</strong>
-			<ul class="list-unstyled">
-				<li><a target="_blank" href="https://facebook.github.io/react/">Official Website</a></li>
-				<li><a target="_blank" href="https://facebook.github.io/react/docs/getting-started.html">Documentation</a></li>
-				<li><a target="_blank" href="https://github.com/facebook/react">GitHub</a></li>
-			</ul>
-
-			<strong>React Native</strong>
-			<ul class="list-unstyled">
-				<li><a target="_blank" href="https://facebook.github.io/react-native/">Official Website</a></li>
-				<li><a target="_blank" href="https://facebook.github.io/react-native/docs/getting-started.html">Documentation</a></li>
-				<li><a target="_blank" href="https://github.com/facebook/react-native">GitHub</a></li>
-			</ul>
-
-			<strong>Other</strong>
-			<ul class="list-unstyled">
-				<li><a target="_blank" href="https://www.creative-tim.com/bootstrap-themes/free?ref=madewithreact">Creative Tim - Bootstrap Themes</a></li>
-			</ul>
-		</div>
-	</div>
-
-	<div class="card">
-		<div class="card-block">
-			<h4 class="card-title">Get Social</h4>
-			<ul class="list-unstyled">
-				<li><a target="_blank" href="https://www.facebook.com/madewithreact/">Facebook</a></li>
-				<li><a target="_blank" href="https://twitter.com/madewithreact">Twitter</a></li>
-				<li><a target="_blank" href="https://plus.google.com/111993955982361702587">Google+</a></li>
-				<li><a target="_blank" href="{{@site.url}}/rss/">RSS</a></li>
-			</ul>
-		</div>
-	</div>
-
-</aside>
+<div class="card">
+  {{> bsa-1  }}
+</div>
+<div class="card  card-tags">
+  <div class="card-header d-flex">
+    <i class="far fa-flag"></i>
+    <h5>Tags</h5>
+  </div>
+  <div class="card-body">
+    {{#get "tags" include="count.posts" order="count.posts desc"}}
+      <ul class="tags-menu">
+        {{#foreach tags}}
+          <li>
+            <a href="{{url}}">{{name}}</a>
+            <p>{{count.posts}}</p>
+          </li>
+        {{/foreach}}
+      </ul>
+    {{/get}}
+  </div>
+</div>
+<div class="card   card-subscribe">
+  <div class="card-header d-flex">
+    <i class="far fa-envelope"></i>
+    <h5>Subscribe</h5>
+  </div>
+  <div class="card-body">
+    <p>
+      Join our monthly newsletter and never miss out on new React examples, demos and experiments.
+    </p>
+    <div id="mc_embed_signup-r">
+      <form action="https://creative-tim.us3.list-manage.com/subscribe/post?u=ff98cdcf2e6a63f872c65dbfb&amp;id=572fcefbd4" method="post" id="mc-embedded-subscribe-form-r" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <div id="mc_embed_signup_scroll-r">
+          <div class="form-input">
+            <input class="required email text-input" type="email" id="mce-EMAIL-r" name="EMAIL" placeholder="Your Email...">
+          </div>
+        	<div id="mce-responses-r" class="clear">
+        		<div class="response" id="mce-error-response-r" style="display:none"></div>
+        		<div class="response" id="mce-success-response-r" style="display:none"></div>
+        	</div>
+          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_20206c0829ddb0efe4d35bc7a_c32002db8f" tabindex="-1" value=""></div>
+          <div class="clear">
+            <button type="submit" name="subscribe" id="mc-embedded-subscribe-r" class="btn btn-outline-info btn-round submit-button">
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

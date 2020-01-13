@@ -1,53 +1,33 @@
-{{!< default}}
+{{!< layouts/default}}
+
 {{#post}}
 
-<main class="card" role="main">
-    {{#if feature_image}}
-    <img src="{{img_url feature_image}}" class="img-fluid card-img-top" alt="{{title}}" />
-    {{/if}}
-
-    <article class="card-block {{post_class}}">
-
-        <header class="post-header">
-            <h1 class="post-title">{{title}}</h1>
-            <section class="post-meta">
-                <time class="post-date text-muted" datetime="{{date format="YYYY-MM-DD"}}">{{date format="DD MMMM YYYY"}}</time> {{#foreach tags}}
-                    <a class="badge badge-warning" href="{{url}}">{{name}}</a>
-                {{/foreach}}
-            </section>
-        </header>
-
-        <section class="card-text post-content">
-            {{content}}
-        </section>
-
-        <footer class="post-footer">
-            <hr />
-            <section class="share">
-                <h4>Share this post</h4>
-                <a class="btn btn-round btn-twitter" href="https://twitter.com/intent/tweet?text={{encode title}}&amp;url={{url absolute="true"}}"
-                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
-                    <i class="fa fa-twitter"></i>
-                </a>
-                <a class="btn btn-round btn-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
-                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
-                    <i class="fa fa-facebook"></i>
-                </a>
-                <a class="btn btn-round btn-google" href="https://plus.google.com/share?url={{url absolute="true"}}"
-                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
-                    <i class="fa fa-google-plus"></i>
-                </a>
-                <a class="btn btn-round btn-pinterest" href="http://pinterest.com/pin/create/bookmarklet/?media={{img_url feature_image}}&url={{url absolute="true"}}&is_video=[true|false]&description={{title}}" onclick="window.open(this.href, 'pinterestwindow','left=20,top=20,width=600,height=700,toolbar=0,resizable=1'); return false;">
-                  <i class="fa fa-pinterest"></i>
-                </a>
-                <a class="btn btn-round btn-linkedin" href="http://www.linkedin.com/shareArticle?url={{url absolute="true"}}&title={{title}}" onclick="window.open(this.href, 'linkedinwindow','left=20,top=20,width=600,height=700,toolbar=0,resizable=1'); return false;">
-                  <i class="fa fa-linkedin"></i>
-                </a>
-            </section>
-
-        </footer>
-
-    </article>
+<main role="main">
+  <div class="page-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="card card-page">
+            <div class="card-header">
+              <div class="card-title">
+                <a href="{{ url }}">{{title}}</a>
+              </div>
+            </div>
+            <div class="card-body card-text">
+              {{content}}
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="row">
+            <div class="col-md-12">
+              {{> sidebar}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </main>
 
 {{/post}}

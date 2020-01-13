@@ -1,0 +1,25 @@
+
+<div class="card card-post">
+  <div class="card-header">
+    <a href="{{ url }}" class="card-header-url">
+      <img src="{{feature_image}}" alt="" class="card-img-top">
+    </a>
+  </div>
+  <div class="card-body">
+    <div class="tags-area">
+      <span href="{{url}}" class="text-info">
+        <b>
+          {{#primary_tag}}
+          <a href="{{url}}">{{name}}</a>
+          {{/primary_tag}}
+
+        </b>
+      </span>
+    </div>
+    <a class="card-title" href="{{ url }}" >{{title}}</a>
+    <p class="card-text">{{excerpt characters="150"}}...</p>
+  </div>
+  <div class="card-footer">
+    <a class="btn btn-outline-info btn-round" href="{{ url }}">See Details</a>
+  </div>
+</div>

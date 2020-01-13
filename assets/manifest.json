@@ -1,5 +1,5 @@
 {
-  "short_name": "Made with React",
+  "short_name": "Expo",
   "name": "Made with React",
   "start_url": "http://madewithreact.com/",
   "display": "standalone",
@@ -9,6 +9,6 @@
     { "src": "img/icon_144.png", "type": "image/png", "sizes": "144x144" },
     { "src": "img/icon_192.png", "type": "image/png", "sizes": "192x192" }
   ],
-  "background_color": "#ffffff",
-  "theme_color": "#008276"
+  "background_color": "#ff4081",
+  "theme_color": "#673ab7"
 }

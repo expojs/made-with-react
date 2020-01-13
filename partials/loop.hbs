@@ -1,21 +1,21 @@
-<div class="row">
-    <div class="col-sm-6">
-        {{>post-card-featured-1}}
-        {{#foreach posts}}
-            {{#if @odd}}
-                {{>post-card this}}
-            {{/if}}
-        {{/foreach}}
-    </div>
 
-    <div class="col-sm-6">
-        {{#foreach posts}}
-            {{#if @even}}
-                {{>post-card this}}
-            {{/if}}
-        {{/foreach}}
-        {{>post-card-featured-2}}
+<div class="row">
+  <div class="col-lg-6 col-md-12 col-12">
+    {{> post-creativetim }}
+  </div>
+  {{#foreach posts}}
+    <div class="col-lg-6 col-md-12 col-12">
+        {{> post}}
     </div>
+  {{/foreach}}
+
+
 </div>
 
+
 {{pagination}}
+
+<script>
+  var randomNumber = Math.floor(Math.random() * (2 - 1 + 1)) + 1;
+  document.getElementById("theme-" + randomNumber).style.display = "block";
+</script>

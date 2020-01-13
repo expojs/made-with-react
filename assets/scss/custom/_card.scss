@@ -1,0 +1,154 @@
+.card{
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 30px;
+  border: none;
+  box-shadow: $shadow-default;
+  border-radius: $border-radious-default;
+
+  &.card-static{
+    display: none;
+    height: $card-height;
+
+    .card-header-url{
+      display: flex;
+      justify-content: center;
+      overflow: hidden;
+      border-radius: $border-radious-default;
+      box-shadow: $shadow-default;
+
+
+      .card-img-top{
+        width: unset;
+        height: 232px;
+        border-radius: $border-radious-default;
+      }
+    }
+
+    .card-footer{
+      bottom: 0;
+      position: absolute;
+    }
+  }
+
+  &.card-post{
+    height: $card-height;
+  }
+
+  &.card-page{
+    .card-header .card-title{
+      font-size: 34px;
+      font-weight: bold;
+      color: $card-title;
+
+      &:hover{
+        color: $card-title !important;
+      }
+    }
+  }
+
+  .card-header{
+    background-color: transparent;
+    border-bottom: none;
+    padding: 20px;
+
+    .card-header-url{
+      display: flex;
+      justify-content: center;
+      overflow: hidden;
+      border-radius: $border-radious-default;
+      box-shadow: $shadow-default;
+
+
+      .card-img-top{
+        width: unset;
+        height: 232px;
+        border-radius: $border-radious-default;
+      }
+    }
+
+  }
+
+  .card-footer{
+    background-color: transparent;
+    border-top: none;
+  }
+
+  .card-body{
+    padding-top: 0;
+    padding-bottom: 0;
+
+    .tags-area{
+      padding: 10px 0;
+
+      .text-info a,
+      .text-info a:hover{
+        color: $brand-state !important;
+        text-transform: uppercase;
+      }
+      .text-info{
+        font-size: $font-size-default;
+        color: $brand-state !important;
+      }
+    }
+
+    .card-title{
+      font-size: 21px;
+      font-weight: bold;
+      color: $card-title;
+
+      &:hover{
+        color: $card-title !important;
+      }
+    }
+
+    .card-text{
+      font-size: $font-size-default;;
+      color: $text-primary;
+      font-weight: lighter;
+      line-height: 24px;
+    }
+  }
+
+  &.post-card{
+    .card-img-top{
+      height: unset;
+    }
+    .btn{
+      font-weight: 200;
+    }
+    .card-body .container{
+      p{
+        color: $text-primary;
+      }
+    }
+  }
+
+  &.recent-posts{
+
+    .card-header{
+      padding-bottom: 0;
+      i{
+        font-size: 18px;
+        margin-right: 10px;
+        margin-top: 3px;
+        color: $text-primary;
+      }
+      h5{
+        color: $text-primary;
+      }
+    }
+
+    .card-body ul{
+      padding-left: 20px;
+
+      li{
+        margin-bottom: 4px;
+
+        a{
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

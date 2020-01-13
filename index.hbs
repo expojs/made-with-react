@@ -1,3 +1,63 @@
-{{!< default}}
+{{!< layouts/default}}
 
-{{> "loop"}}
+<main role="main">
+
+  <div class="section section-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-8 col-12 text-lg-left text-center text-md-center ml-auto mr-auto">
+          <img alt="Made with React" src="{{asset "/img/icon-react.png"}}" height="100" width="100" style="margin-top: 60px">
+          <h1 class="text-title">{{@site.title}}</h1>
+          <p class="text-description">{{@site.description}}</p>
+          <div id="mc_embed_signup">
+            <form action="https://creative-tim.us3.list-manage.com/subscribe/post?u=ff98cdcf2e6a63f872c65dbfb&amp;id=572fcefbd4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <div id="mc_embed_signup_scroll">
+                <div class="form-group form-subscribe form-input">
+                  <input type="text" placeholder="Your email" class="form-control required email text-input" id="mce-EMAIL" name="EMAIL">
+                  <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-round btn-danger btn-submit btn-sm submit-button">
+                    Subscribe
+                  </button>                </div>
+              	<div id="mce-responses" class="clear">
+              		<div class="response" id="mce-error-response" style="display:none"></div>
+              		<div class="response" id="mce-success-response" style="display:none"></div>
+              	</div>
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_20206c0829ddb0efe4d35bc7a_c32002db8f" tabindex="-1" value=""></div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-8 d-lg-block d-none">
+          <img src="{{asset "/img/header_ill.svg"}}" alt="asd" class="image-svg d-lg-block d-none">
+          <div class="white-space">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section-search mr-auto ml-auto">
+    <div class="form-group form-search">
+      <input name="q" id="my-custom-input" class="form-control form-control-search" placeholder="Search products"  autocomplete="off">
+      <button type="submit" name="button" class="btn btn-white btn-round btn-submit" id="my-custom-button">
+        <i class="icon-search fa fa-search"></i>
+      </button>
+      <div id="my-custom-results"></div>
+    </div>
+  </div>
+  <div class="page-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          {{> "loop"}}
+        </div>
+        <div class="col-md-4">
+          <div class="row">
+            <div class="col-md-12">
+              {{> sidebar}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

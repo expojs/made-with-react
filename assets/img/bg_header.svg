@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1920px" height="251px" viewBox="0 0 1920 251" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>Filter</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Product-page-" fill="#FCFCFF" fill-rule="nonzero">
+            <g id="Header">
+                <path d="M0,0 L1920,0 L1920,215 C1586,167 1240.26125,167 882.783757,215 C525.306261,263 231.045009,263 0,215 L0,0 Z" id="Filter" transform="translate(960.000000, 125.500000) scale(-1, 1) translate(-960.000000, -125.500000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

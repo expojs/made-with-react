@@ -1,32 +1,38 @@
-<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+
+<nav class="navbar navbar-expand-lg navbar-transparent navbar-light fixed-top" id="nav">
   <div class="container">
     <a class="navbar-brand" href="{{@site.url}}">
-      <img alt="{{@site.title}}" src="{{asset "img/logo.svg"}}"> {{@site.title}}
+      <img alt="Made with React" src="{{asset "img/icon-react.png"}}" height="30" width="30">
+      {{@site.title}}
     </a>
-      <ul class="navbar-nav text-uppercase font-weight-bold mr-auto">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        {{#foreach navigation}}
+        <li class="nav-item {{#if current}} is-active{{/if}}">
+          <a href="{{url absolute="true"}}" class="nav-link">{{label}}</a>
+        </li>
+        {{/foreach}}
+      </ul>
+      <ul class="nav-social navbar-nav ml-auto">
         <li class="nav-item">
-            <a class="nav-link" href="{{url absolute="true"}}tag/react">React</a>
+          <a href="{{@site.url}}/blog/" class="nav-link">Blog</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="{{url absolute="true"}}tag/react-native">React Native</a>
+          <a href="https://www.facebook.com/madewithreact/" target="_blank" class="nav-link"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        <li class="nav-item">
+          <a href="https://twitter.com/madewithreact" target="_blank" class="nav-link"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li class="nav-item">
+          <a href="https://github.com/expojs/made-with-react" target="_blank" class="nav-link"><i class="fab fa-github"></i></a>
+        </li>
+        <li class="nav-item">
+          <a type="text" href="https://docs.google.com/forms/d/1nzITKUQ_FD8DEl_WzInpkW4uvvzf58WJpCezQDHLiE8/" class="btn btn-info btn-round ml-2"><i class="fa fa-plus mr-2"></i>Submit product</a>
         </li>
       </ul>
-      <ul class="nav navbar-nav text-uppercase font-weight-bold">
-          <li class="nav-item hidden-md-down">
-              <a class="nav-link" href="https://www.facebook.com/madewithreact/" target="_blank"><i class="fa fa-facebook"></i></a>
-          </li>
-          <li class="nav-item hidden-md-down">
-              <a class="nav-link" href="https://twitter.com/madewithreact" target="_blank"><i class="fa fa-twitter"></i></a>
-          </li>
-          <li class="nav-item hidden-md-down">
-              <a class="nav-link" href="https://plus.google.com/111993955982361702587" target="_blank"><i class="fa fa-google-plus"></i></a>
-          </li>
-          <li class="nav-item hidden-md-down">
-              <a class="nav-link" href="{{@site.url}}/rss/" target="_blank"><i class="fa fa-rss"></i></a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="https://www.creative-tim.com/bootstrap-themes/react-themes?ref=madewithreact" target="_blank">ReactJS Themes <i class="fa fa-external-link"></i></a>
-          </li>
-      </ul>
+    </div>
   </div>
 </nav>
