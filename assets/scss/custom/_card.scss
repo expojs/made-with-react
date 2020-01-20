@@ -95,10 +95,10 @@
     .card-title{
       font-size: 21px;
       font-weight: bold;
-      color: $card-title;
+      color: $text-primary;
 
       &:hover{
-        color: $card-title !important;
+        color: $text-primary !important;
       }
     }
 
