@@ -7,7 +7,7 @@
     <h5>Tags</h5>
   </div>
   <div class="card-body">
-    {{#get "tags" include="count.posts" order="count.posts desc"}}
+    {{#get "tags" include="count.posts" order="count.posts desc" limit=20}}
       <ul class="tags-menu">
         {{#foreach tags}}
           <li>
