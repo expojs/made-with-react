@@ -7116,6 +7116,12 @@ a {
 .page-content .error-image {
   width: 55%; }
 
+h3 {
+  font-size: 1.15rem; }
+
+h1, h2, h3, h4, h5 {
+  color: #223464; }
+
 .card {
   width: 100%;
   overflow: hidden;
@@ -7191,6 +7197,8 @@ a {
     height: unset; }
   .card.post-card .btn {
     font-weight: 200; }
+  .card.post-card .card-body .container .card-title {
+    font-size: 24px; }
   .card.post-card .card-body .container p {
     color: #223464; }
   .card.recent-posts .card-header {
