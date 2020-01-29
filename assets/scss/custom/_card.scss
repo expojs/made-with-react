@@ -118,6 +118,9 @@
       font-weight: 200;
     }
     .card-body .container{
+      .card-title{
+        font-size: 24px;
+      }
       p{
         color: $text-primary;
       }
